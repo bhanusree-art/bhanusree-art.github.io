@@ -25,7 +25,7 @@ header h1 {
   font-weight: 700;
   margin: 0;
   color: #fff;
-  background: linear-gradient(90deg, #6dd5ed, #2193b0);
+  background: linear-gradient(90deg, #6dd5ed, #4CAF50); /* Blue to green */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -78,7 +78,7 @@ nav ul li a:hover {
   color: #fff;
   margin-bottom: 20px;
   font-weight: 700;
-  background: linear-gradient(90deg, #6dd5ed, #2193b0);
+  background: linear-gradient(90deg, #6dd5ed, #4CAF50); /* Blue to green */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -112,7 +112,7 @@ nav ul li a:hover {
 }
 
 #content a:hover {
-  color: #2193b0; /* Darker blue */
+  color: #4CAF50; /* Green */
 }
 
 /* Footer (Contact Logos) */
