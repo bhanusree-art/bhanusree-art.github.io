@@ -2,15 +2,14 @@
 const contentData = {
   about: `
     <h3>About</h3>
-    <p>I’m a Software Engineer driven by a deep passion for technology and a strong desire to create impactful solutions. With over 3 years of experience, I thrive on the challenges of building scalable backend systems and optimizing web applications to improve user experiences and drive business growth.</p>
-    <p>Beyond my technical skills in Java, Spring Boot, Microservices, and AWS, I believe in the power of collaboration and fostering meaningful connections. I’m committed to continuous learning and am always eager to explore emerging technologies, ensuring I bring fresh ideas and innovative solutions to every project.</p>
-    <p>My approach is built on strong interpersonal skills, whether it’s leading teams, mentoring others, or working cross-functionally to deliver results. I’m passionate about creating an environment where creativity, trust, and collaboration flourish, and where we can all grow together as professionals.</p>
-    <p>Let’s connect—I'm excited about the opportunity to collaborate, learn from each other, and make a real impact!</p>
+    <p>From a young age, I’ve been fascinated by how things work, especially computers. What began as a curiosity about technology soon turned into a deep passion for software development. I dove into coding, starting with simple projects that sparked my interest and gradually evolving into more complex systems. My journey led me to pursue both a Bachelor’s and Master’s in Computer Science, where I honed my problem-solving skills and built a solid technical foundation in Java, Spring Boot, AWS, and other tools that power today’s digital world.<p>
+    <p>As a Software Engineer, I’ve had the privilege of working on impactful projects—like optimizing ad delivery at Yahoo and enhancing mobile app performance for over 500K devices at Mivi. I’m passionate about designing scalable, high-performance systems that meet real-world challenges. But for me, success isn’t just about technical achievements; it’s about the people I work with. I firmly believe that collaboration is key to innovation, and I strive to foster an environment where creativity, trust, and communication flourish.<p>
+    <p>Today, I’m driven by the opportunity to solve complex problems with technology while also growing as a leader. Whether leading teams, mentoring peers, or collaborating across functions, I aim to bring fresh ideas and innovative solutions to every project. My journey from a curious child to a software engineer is just the beginning, and I’m excited to connect with like-minded professionals, learn together, and make a meaningful impact in the tech world.<p>
   `,
   experience: `
     <h3>Experience</h3>
     <h4>Software Engineer, Yahoo</h4>
-    <p>Remote (Texas) | Consultant | May 2024 to Present</p>
+    <p>Remote (Texas) | May 2024 to Present</p>
     <ul>
       <li>Designed and implemented microservices using Spring Boot, optimizing the delivery of targeted ads to millions of users, resulting in a 25% increase in ad engagement.</li>
       <li>Developed and deployed robust, scalable REST APIs that facilitate seamless communication between front-end systems (built with Angular and React) and back-end services, improving response times by 30% and ensuring high availability.</li>
@@ -20,7 +19,7 @@ const contentData = {
     </ul>
 
     <h4>Software Engineer, Mivi</h4>
-    <p>Hyderabad, India | Consultant | Mar 2020 to Jun 2022</p>
+    <p>Hyderabad, India | Mar 2020 to Jun 2022</p>
     <ul>
       <li>Designed and developed backend services for Mivi’s User-Centric Mobile App to support over 500K devices, enabling personalized settings and firmware updates using Java and Spring Boot.</li>
       <li>Created and optimized REST APIs and Microservices, improving response times by 30%, contributing to smoother mobile app functionality built with Angular and React.</li>
