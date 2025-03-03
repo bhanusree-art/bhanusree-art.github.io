@@ -111,7 +111,6 @@ const contentData = {
     <p>Courses: Data Structures and Algorithms, Operating Systems, Database Management Systems, Computer Organization, Computer Networks, Design and Analysis of Algorithms, Compiler Design, Cloud Computing, Linux Programming, Mobile Computing, Adhoc and Sensor Networks, Programming Essentials in Python.</p>
   `,
   contact: `
-    <h3>Contact</h3>
     <p>Feel free to reach out to me via email or connect with me on LinkedIn. I’d love to hear from you!</p>
   `,
 };
