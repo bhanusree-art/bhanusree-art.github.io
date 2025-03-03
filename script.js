@@ -2,9 +2,9 @@
 const contentData = {
   about: `
     <h3>About</h3>
-    <p>From a young age, I’ve been fascinated by how things work, especially computers. What began as a curiosity about technology soon turned into a deep passion for software development. I dove into coding, starting with simple projects that sparked my interest and gradually evolving into more complex systems. My journey led me to pursue both a Bachelor’s and Master’s in Computer Science, where I honed my problem-solving skills and built a solid technical foundation in Java, Spring Boot, AWS, and other tools that power today’s digital world.<p>
-    <p>As a Software Engineer, I’ve had the privilege of working on impactful projects—like optimizing ad delivery at Yahoo and enhancing mobile app performance for over 500K devices at Mivi. I’m passionate about designing scalable, high-performance systems that meet real-world challenges. But for me, success isn’t just about technical achievements; it’s about the people I work with. I firmly believe that collaboration is key to innovation, and I strive to foster an environment where creativity, trust, and communication flourish.<p>
-    <p>Today, I’m driven by the opportunity to solve complex problems with technology while also growing as a leader. Whether leading teams, mentoring peers, or collaborating across functions, I aim to bring fresh ideas and innovative solutions to every project. My journey from a curious child to a software engineer is just the beginning, and I’m excited to connect with like-minded professionals, learn together, and make a meaningful impact in the tech world.<p>
+    <p>From a young age, I’ve been fascinated by how things work, especially computers. What began as a curiosity about technology soon turned into a deep passion for software development. I dove into coding, starting with simple projects that sparked my interest and gradually evolving into more complex systems. My journey led me to pursue both a Bachelor’s and Master’s in Computer Science, where I honed my problem-solving skills and built a solid technical foundation in Java, Spring Boot, AWS, and other tools that power today’s digital world.</p>
+    <p>As a Software Engineer, I’ve had the privilege of working on impactful projects—like optimizing ad delivery at Yahoo and enhancing mobile app performance for over 500K devices at Mivi. I’m passionate about designing scalable, high-performance systems that meet real-world challenges. But for me, success isn’t just about technical achievements; it’s about the people I work with. I firmly believe that collaboration is key to innovation, and I strive to foster an environment where creativity, trust, and communication flourish.</p>
+    <p>Today, I’m driven by the opportunity to solve complex problems with technology while also growing as a leader. Whether leading teams, mentoring peers, or collaborating across functions, I aim to bring fresh ideas and innovative solutions to every project. My journey from a curious child to a software engineer is just the beginning, and I’m excited to connect with like-minded professionals, learn together, and make a meaningful impact in the tech world.</p>
   `,
   experience: `
     <h3>Experience</h3>
@@ -109,7 +109,11 @@ const contentData = {
     <h4>Malla Reddy Engineering College for Women, Hyderabad, India</h4>
     <p>Bachelor of Technology in Computer Science and Engineering</p>
     <p>Courses: Data Structures and Algorithms, Operating Systems, Database Management Systems, Computer Organization, Computer Networks, Design and Analysis of Algorithms, Compiler Design, Cloud Computing, Linux Programming, Mobile Computing, Adhoc and Sensor Networks, Programming Essentials in Python.</p>
-  `
+   `,
+  contact: `
+    <h3>Contact</h3>
+    <p>Feel free to reach out to me via email or connect with me on LinkedIn. I’d love to hear from you!</p>
+  `,
 };
 
 // Load Content Dynamically
@@ -117,7 +121,12 @@ document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', function (e) {
     e.preventDefault();
     const section = this.getAttribute('href').substring(1);
-    document.getElementById('content').innerHTML = contentData[section];
+    if (section === 'contact') {
+      // Scroll to the footer instead of loading content
+      document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
+    } else {
+      document.getElementById('content').innerHTML = contentData[section];
+    }
   });
 });
 
