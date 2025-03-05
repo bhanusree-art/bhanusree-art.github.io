@@ -1,8 +1,8 @@
 /* General Styles */
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff; 
+  color: #333; /* Dark gray for text */
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -21,20 +21,19 @@ header {
 }
 
 header h1 {
-  font-size: clamp(2rem, 8vw, 3.5rem); /* Responsive font size */
+  font-size: clamp(2rem, 8vw, 3.5rem); 
   font-weight: 700;
   margin: 0;
-  color: #fff;
-  background: linear-gradient(90deg, #6dd5ed, #4CAF50); /* Blue to green */
+  background: linear-gradient(90deg, #6dd5ed, #4CAF50); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 header h2 {
-  font-size: clamp(1.2rem, 4vw, 1.8rem); /* Responsive font size */
+  font-size: clamp(1.2rem, 4vw, 1.8rem); 
   font-weight: 400;
   margin: 10px 0 0;
-  color: #aaa;
+  color: #666; 
 }
 
 /* Navigation Links */
@@ -50,7 +49,7 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #aaa;
+  color: #666; 
   font-size: 1.1rem;
   font-weight: 500;
   padding: 10px 20px;
@@ -59,7 +58,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #6dd5ed; /* Soft blue */
+  color: #6dd5ed; 
   border-bottom: 2px solid #6dd5ed;
 }
 
@@ -67,32 +66,32 @@ nav ul li a:hover {
 #content {
   text-align: left;
   padding: 20px;
-  background-color: #111;
+  background-color: #f9f9f9; 
   border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
   margin-top: 30px;
 }
 
 #content h3 {
   font-size: 2.2rem;
-  color: #fff;
+  color: #333; /* Dark gray for headings */
   margin-bottom: 20px;
   font-weight: 700;
-  background: linear-gradient(90deg, #6dd5ed, #4CAF50); /* Blue to green */
+  background: linear-gradient(90deg, #6dd5ed, #4CAF50); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 #content h4 {
   font-size: 1.6rem;
-  color: #fff;
+  color: #333; /* Dark gray for subheadings */
   margin-bottom: 10px;
   font-weight: 600;
 }
 
 #content p, #content ul {
   font-size: 1rem;
-  color: #aaa;
+  color: #555; /* Darker gray for text */
   margin-bottom: 20px;
 }
 
@@ -121,7 +120,7 @@ footer {
 }
 
 footer a {
-  color: #aaa;
+  color: #666; /* Medium gray for icons */
   font-size: 1.5rem;
   margin: 0 15px;
   transition: color 0.3s ease;
@@ -134,11 +133,11 @@ footer a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
   header h1 {
-    font-size: clamp(2rem, 8vw, 3.5rem); /* Responsive font size */
+    font-size: clamp(2rem, 8vw, 3.5rem); 
   }
 
   header h2 {
-    font-size: clamp(1.2rem, 4vw, 1.8rem); /* Responsive font size */
+    font-size: clamp(1.2rem, 4vw, 1.8rem); 
   }
 
   nav ul li a {
