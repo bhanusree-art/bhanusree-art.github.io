@@ -1,11 +1,17 @@
 /* General Styles */
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #fff; 
+  background: linear-gradient(
+    to bottom right,
+    #fff8e1, /* Light yellow */
+    #ffffff, /* White */
+    #f3e5f5  /* Light purple */
+  );
   color: #333; /* Dark gray for text */
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 .container {
@@ -21,19 +27,20 @@ header {
 }
 
 header h1 {
-  font-size: clamp(2rem, 8vw, 3.5rem); 
+  font-size: clamp(2.5rem, 8vw, 4rem); /* Responsive font size */
   font-weight: 700;
   margin: 0;
-  background: linear-gradient(90deg, #6dd5ed, #4CAF50); 
+  color: #333; /* Dark gray */
+  background: linear-gradient(90deg, #6dd5ed, #4CAF50); /* Blue to green */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 header h2 {
-  font-size: clamp(1.2rem, 4vw, 1.8rem); 
+  font-size: clamp(1.4rem, 4vw, 2rem); /* Responsive font size */
   font-weight: 400;
   margin: 10px 0 0;
-  color: #666; 
+  color: #555; /* Medium gray for subtitle */
 }
 
 /* Navigation Links */
@@ -49,7 +56,7 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #666; 
+  color: #555; /* Medium gray for links */
   font-size: 1.1rem;
   font-weight: 500;
   padding: 10px 20px;
@@ -58,18 +65,19 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #6dd5ed; 
+  color: #6dd5ed; /* Soft blue */
   border-bottom: 2px solid #6dd5ed;
 }
 
 /* Content Section */
 #content {
   text-align: left;
-  padding: 20px;
-  background-color: #f9f9f9; 
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
   border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   margin-top: 30px;
+  backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
 }
 
 #content h3 {
@@ -77,21 +85,21 @@ nav ul li a:hover {
   color: #333; /* Dark gray for headings */
   margin-bottom: 20px;
   font-weight: 700;
-  background: linear-gradient(90deg, #6dd5ed, #4CAF50); 
+  background: linear-gradient(90deg, #6dd5ed, #4CAF50); /* Blue to green */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 #content h4 {
   font-size: 1.6rem;
-  color: #333; /* Dark gray for subheadings */
+  color: #444; /* Slightly darker gray for subheadings */
   margin-bottom: 10px;
   font-weight: 600;
 }
 
 #content p, #content ul {
   font-size: 1rem;
-  color: #555; /* Darker gray for text */
+  color: #555; /* Medium gray for text */
   margin-bottom: 20px;
 }
 
@@ -133,11 +141,11 @@ footer a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
   header h1 {
-    font-size: clamp(2rem, 8vw, 3.5rem); 
+    font-size: clamp(2rem, 8vw, 3.5rem); /* Responsive font size */
   }
 
   header h2 {
-    font-size: clamp(1.2rem, 4vw, 1.8rem); 
+    font-size: clamp(1.2rem, 4vw, 1.8rem); /* Responsive font size */
   }
 
   nav ul li a {
