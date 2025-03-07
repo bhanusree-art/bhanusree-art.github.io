@@ -133,3 +133,12 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
 // Load About Section by Default
 document.getElementById('content').innerHTML = contentData.about;
+
+// Floating Effect on Scroll
+document.addEventListener("scroll", () => {
+  const content = document.querySelector("#content");
+  const scrollPosition = window.scrollY;
+
+  // Adjust the floating effect intensity (e.g., 0.3 for subtle effect)
+  content.style.transform = `translateY(${scrollPosition * 0.3}px)`;
+});
