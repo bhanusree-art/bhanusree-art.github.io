@@ -3,10 +3,11 @@ body {
   font-family: 'Inter', sans-serif;
   background: radial-gradient(
     circle at top left,
-    #fff176, /* Brighter light yellow */
+    #fff9c4, /* Subtle lemon yellow */
     #ffffff, /* White */
-    #ce93d8  /* Brighter light purple */
+    #e1bee7  /* Soft purple */
   );
+  background-attachment: fixed; /* Fix the background */
   color: #333; /* Dark gray for text */
   margin: 0;
   padding: 0;
@@ -19,6 +20,7 @@ body {
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
+  position: relative; /* Ensure content scrolls over the background */
 }
 
 /* Header Section */
