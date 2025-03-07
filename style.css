@@ -1,11 +1,11 @@
 /* General Styles */
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(
-    to bottom right,
-    #fff8e1, /* Light yellow */
+  background: radial-gradient(
+    circle at top left,
+    #fff176, /* Brighter light yellow */
     #ffffff, /* White */
-    #f3e5f5  /* Light purple */
+    #ce93d8  /* Brighter light purple */
   );
   color: #333; /* Dark gray for text */
   margin: 0;
@@ -30,17 +30,14 @@ header h1 {
   font-size: clamp(2.5rem, 8vw, 4rem); /* Responsive font size */
   font-weight: 700;
   margin: 0;
-  color: #333; /* Dark gray */
-  background: linear-gradient(90deg, #6dd5ed, #4CAF50); /* Blue to green */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #444; /* Darker gray for name */
 }
 
 header h2 {
   font-size: clamp(1.4rem, 4vw, 2rem); /* Responsive font size */
   font-weight: 400;
   margin: 10px 0 0;
-  color: #555; /* Medium gray for subtitle */
+  color: #666; /* Medium gray for subtitle */
 }
 
 /* Navigation Links */
@@ -56,7 +53,7 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #555; /* Medium gray for links */
+  color: #666; /* Medium gray for links */
   font-size: 1.1rem;
   font-weight: 500;
   padding: 10px 20px;
@@ -82,24 +79,21 @@ nav ul li a:hover {
 
 #content h3 {
   font-size: 2.2rem;
-  color: #333; /* Dark gray for headings */
+  color: #444; /* Darker gray for headings */
   margin-bottom: 20px;
   font-weight: 700;
-  background: linear-gradient(90deg, #6dd5ed, #4CAF50); /* Blue to green */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 #content h4 {
   font-size: 1.6rem;
-  color: #444; /* Slightly darker gray for subheadings */
+  color: #555; /* Medium gray for subheadings */
   margin-bottom: 10px;
   font-weight: 600;
 }
 
 #content p, #content ul {
   font-size: 1rem;
-  color: #555; /* Medium gray for text */
+  color: #666; /* Medium gray for text */
   margin-bottom: 20px;
 }
 
