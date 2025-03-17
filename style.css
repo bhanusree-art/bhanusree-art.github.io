@@ -1,74 +1,77 @@
-/* General Styles */
+/* Background with random gradient transitions */
 body {
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #FCFEB5 20%, #BEB6F8 40%, #FDF6DF 60%, #ECE1FC 80%);
-  color: #585858;
+  background: linear-gradient(
+    45deg,
+    #facc15, /* Yellow */
+    #9333ea, /* Purple */
+    #facc15,
+    #9333ea
+  );
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s infinite alternate;
+  min-height: 100vh;
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-/* Header Section */
-header h1 {
-  font-size: clamp(2rem, 8vw, 3.5rem);
-  font-weight: 700;
-  margin: 0;
-  color: #4A4A4A;
+/* Smooth gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 50% 25%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 75%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
 }
 
-header h2 {
-  font-size: clamp(1.2rem, 4vw, 1.8rem);
-  font-weight: 400;
-  margin: 10px 0 0;
-  color: #666666;
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
 }
 
-/* Navigation Links */
-nav ul li a {
+nav a {
   text-decoration: none;
-  color: #5C5C5C;
-  font-size: 1.1rem;
+  font-size: 18px;
+  color: rgb(100, 100, 100); /* Greyish-ash tone */
   font-weight: 500;
-  padding: 10px 20px;
   transition: all 0.3s ease;
-  border-bottom: 2px solid transparent;
 }
 
-nav ul li a:hover {
-  color: #BEB6F8;
-  border-bottom: 2px solid #BEB6F8;
+nav a:hover {
+  font-weight: bold;
+  color: black;
 }
 
-/* Content Section */
-#content {
-  text-align: center;
+/* Content Boxes */
+.content-box {
+  background: rgba(255, 255, 255, 0.3); /* Translucent white */
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.6); /* Translucent effect */
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  margin-top: 30px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: rgb(80, 80, 80); /* Greyish-ash text */
 }
 
-#content h3, #content h4 {
-  color: #555555;
-}
-
-/* Footer */
-footer {
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 20px;
-  text-align: center;
-  margin-top: 50px;
-}
-
-footer a {
-  color: #5A5A5A;
-  font-size: 1.5rem;
-  margin: 0 10px;
-  transition: 0.3s ease;
-}
-
-footer a:hover {
-  color: #BEB6F8;
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row; /* Keep it horizontal */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
 }
