@@ -72,36 +72,30 @@ nav a:hover {
   margin: 0 auto; /* Center-align content container */
 }
 
-/* Center-align headings by default */
-#content h3 {
-  margin-top: 0;
-  text-align: center; /* Center-align section headings */
-}
-
-/* Style for sections (Experience, Projects, Skills, Education) */
+/* Style for all sections (About, Experience, Projects, Skills, Education, Contact) */
+#about,
 #experience,
 #projects,
 #skills,
-#education {
+#education,
+#contact {
   background: rgba(255, 255, 255, 0.3); /* Translucent white background */
   backdrop-filter: blur(10px); /* Blur effect */
   border-radius: 10px; /* Rounded corners */
   padding: 20px; /* Padding inside the box */
   margin: 20px 0; /* Spacing between sections */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Left-align text for Experience, Projects, Skills, Education */
+#experience,
+#projects,
+#skills,
+#education {
   text-align: left; /* Left-align text */
 }
 
-/* Add more spacing between section headings and content */
-#experience h3,
-#projects h3,
-#skills h3,
-#education h3 {
-  margin-bottom: 20px; /* Add space below headings */
-  color: rgb(80, 80, 80); /* Greyish-ash text */
-}
-
-/* Style lists in left-aligned sections */
+/* Remove bullet points for lists in Experience, Projects, Skills, Education */
 #experience ul,
 #projects ul,
 #skills ul,
@@ -110,11 +104,15 @@ nav a:hover {
   padding: 0;
 }
 
-#experience ul li,
-#projects ul li,
-#skills ul li,
-#education ul li {
-  margin-bottom: 10px;
+/* Add spacing between section headings and content */
+#about h3,
+#experience h3,
+#projects h3,
+#skills h3,
+#education h3,
+#contact h3 {
+  margin-bottom: 20px; /* Add space below headings */
+  color: rgb(80, 80, 80); /* Greyish-ash text */
 }
 
 /* Bottom Icons */
