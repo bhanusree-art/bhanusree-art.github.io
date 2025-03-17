@@ -1,11 +1,12 @@
 /* General Styles */
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(180deg, #FCFEB5, #FDF6DF, #ECE1FC, #BEB6F8);
-  color: #2A2826;
+  background: linear-gradient(135deg, #FCFEB5 20%, #BEB6F8 40%, #FDF6DF 60%, #ECE1FC 80%);
+  color: #585858;
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  text-align: center;
 }
 
 /* Header Section */
@@ -13,20 +14,20 @@ header h1 {
   font-size: clamp(2rem, 8vw, 3.5rem);
   font-weight: 700;
   margin: 0;
-  color: #2A2826;
+  color: #4A4A4A;
 }
 
 header h2 {
   font-size: clamp(1.2rem, 4vw, 1.8rem);
   font-weight: 400;
   margin: 10px 0 0;
-  color: #2A2826;
+  color: #666666;
 }
 
 /* Navigation Links */
 nav ul li a {
   text-decoration: none;
-  color: #2A2826;
+  color: #5C5C5C;
   font-size: 1.1rem;
   font-weight: 500;
   padding: 10px 20px;
@@ -41,28 +42,28 @@ nav ul li a:hover {
 
 /* Content Section */
 #content {
-  text-align: left;
+  text-align: center;
   padding: 20px;
-  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.6); /* Translucent effect */
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   margin-top: 30px;
 }
 
 #content h3, #content h4 {
-  color: #2A2826;
+  color: #555555;
 }
 
 /* Footer */
 footer {
-  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 20px;
   text-align: center;
   margin-top: 50px;
 }
 
 footer a {
-  color: #2A2826;
+  color: #5A5A5A;
   font-size: 1.5rem;
   margin: 0 10px;
   transition: 0.3s ease;
