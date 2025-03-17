@@ -13,7 +13,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: rgb(80, 80, 80); /* Greyish-ash text */
-  text-align: center; /* Center-align all text */
+  text-align: center; /* Center-align all text by default */
 }
 
 /* Smooth gradient animation */
@@ -69,19 +69,51 @@ nav a:hover {
 #content {
   padding: 20px;
   max-width: 800px;
-  margin: 0 auto; /* Center-align content */
+  margin: 0 auto; /* Center-align content container */
 }
 
+/* Center-align headings by default */
 #content h3 {
   margin-top: 0;
+  text-align: center; /* Center-align section headings */
 }
 
-#content ul {
+/* Style for sections (Experience, Projects, Skills, Education) */
+#experience,
+#projects,
+#skills,
+#education {
+  background: rgba(255, 255, 255, 0.3); /* Translucent white background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  margin: 20px 0; /* Spacing between sections */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: left; /* Left-align text */
+}
+
+/* Add more spacing between section headings and content */
+#experience h3,
+#projects h3,
+#skills h3,
+#education h3 {
+  margin-bottom: 20px; /* Add space below headings */
+  color: rgb(80, 80, 80); /* Greyish-ash text */
+}
+
+/* Style lists in left-aligned sections */
+#experience ul,
+#projects ul,
+#skills ul,
+#education ul {
   list-style: none; /* Remove pointed dots */
   padding: 0;
 }
 
-#content ul li {
+#experience ul li,
+#projects ul li,
+#skills ul li,
+#education ul li {
   margin-bottom: 10px;
 }
 
