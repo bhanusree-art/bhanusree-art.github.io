@@ -13,6 +13,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: rgb(80, 80, 80); /* Greyish-ash text */
+  text-align: center; /* Center-align all text */
 }
 
 /* Smooth gradient animation */
@@ -42,13 +43,21 @@ nav {
   margin-top: 20px;
 }
 
+nav ul {
+  list-style: none; /* Remove pointed dots */
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for mobile */
+  justify-content: center;
+  gap: 15px;
+}
+
 nav a {
   text-decoration: none;
   font-size: 18px;
   color: rgb(100, 100, 100); /* Greyish-ash tone */
   font-weight: 500;
   transition: all 0.3s ease;
-  list-style: none; /* Remove pointed dots */
 }
 
 nav a:hover {
@@ -56,34 +65,24 @@ nav a:hover {
   color: black;
 }
 
-/* Horizontal Sections */
-.sections-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 40px;
-  flex-wrap: wrap;
-}
-
-.section {
-  background: rgba(255, 255, 255, 0.3); /* Translucent white */
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
+/* Content Section */
+#content {
   padding: 20px;
-  width: 250px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto; /* Center-align content */
 }
 
-.section h2 {
+#content h3 {
   margin-top: 0;
-  font-size: 24px;
-  color: rgb(80, 80, 80); /* Greyish-ash text */
 }
 
-.section p {
-  font-size: 16px;
-  line-height: 1.5;
+#content ul {
+  list-style: none; /* Remove pointed dots */
+  padding: 0;
+}
+
+#content ul li {
+  margin-bottom: 10px;
 }
 
 /* Bottom Icons */
@@ -108,21 +107,8 @@ nav a:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .sections-container {
-    flex-direction: row; /* Keep sections in a horizontal line */
-    flex-wrap: wrap; /* Allow wrapping to next line if needed */
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .section {
-    width: 45%; /* Adjust width for mobile view */
-    min-width: 150px; /* Ensure sections don't get too small */
-  }
-
-  nav {
-    flex-wrap: wrap;
-    gap: 15px;
+  nav ul {
+    gap: 10px; /* Adjust spacing for mobile */
   }
 
   nav a {
