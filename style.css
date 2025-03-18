@@ -69,7 +69,8 @@ nav a:hover {
 #content {
   padding: 20px;
   max-width: 800px;
-  text-align: left; /* left-align content */
+  margin: 0 auto; /* center-align content */
+  text-align: left;
 }
 
 #content h3 {
