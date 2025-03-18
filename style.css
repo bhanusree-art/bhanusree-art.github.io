@@ -66,7 +66,7 @@ nav ul li a:hover {
 /* Content Section */
 #content {
   text-align: left;
-  padding: 20px;
+  padding: 30px;
   background-color: #111;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -86,7 +86,7 @@ nav ul li a:hover {
 #content h4 {
   font-size: 1.6rem;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-weight: 600;
 }
 
@@ -94,6 +94,7 @@ nav ul li a:hover {
   font-size: 1rem;
   color: #aaa;
   margin-bottom: 20px;
+  line-height: 1.8;
 }
 
 #content ul {
@@ -115,9 +116,25 @@ nav ul li a:hover {
   color: #2193b0; /* Darker blue */
 }
 
+/* Project Section */
+.project {
+  margin-bottom: 40px;
+}
+
+.project h4 {
+  margin-bottom: 10px;
+}
+
+.project ul {
+  margin-top: 10px;
+}
+
 /* Footer (Contact Logos) */
 footer {
   margin-top: 60px;
+  padding: 20px 0;
+  background-color: #111;
+  border-radius: 10px;
 }
 
 footer a {
@@ -146,12 +163,16 @@ footer a:hover {
     padding: 8px 15px;
   }
 
+  #content {
+    padding: 20px;
+  }
+
   #content h3 {
     font-size: 1.8rem;
   }
 
   #content h4 {
-    font-size: 1.4rem;
+    font-size: 1.4rem; 
   }
 
   #content p, #content ul {
